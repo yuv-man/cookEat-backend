@@ -7,7 +7,7 @@ require("dotenv").config();
 const recipes = require("./routes/recipes");
 const users = require("./routes/users");
 const auth = require("./routes/auth");
-const port = 5000;
+const port = process.env.PORT;
 
 // connect to mongoDb with mongoose
 const dbUrl = process.env.DATABASE_URL;
